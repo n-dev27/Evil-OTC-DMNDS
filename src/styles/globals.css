@@ -1,0 +1,190 @@
+@tailwind base;
+@layer base {
+  html {
+    @apply font-sans;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "HelveticaNeue";
+  src: url("../assets/font/HelveticaNeueCyr-Light.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/font/Centrale Sans Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter_Bold";
+  src: url("../assets/font/Centrale Sans Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter_Regular";
+  src: url("../assets/font/Centrale Sans Regular.otf") format("truetype");
+}
+
+.font_Inter {
+  font-family: Inter;
+}
+
+.font_Inter_Bold {
+  font-family: Inter_Bold;
+}
+
+.font_Inter_Regular {
+  font-family: Inter_Regular;
+}
+
+.tab_container > div {
+  width: 100%;
+  overflow: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+.customSwitch .react-switch-handle {
+  /* background: linear-gradient(180deg, #354B75 0%, #7B95BF 100%),
+linear-gradient(180deg, #FFFFFF 0%, #627599 100%) !important;
+  border: 0.65px solid !important;
+  border-color: #A2B5D2 !important;
+  box-shadow: 0px 7.775346279144287px 7.775346279144287px 0px rgba(24, 30, 41, 1) !important; */
+  background: linear-gradient(180deg, #435D8E 0%, #9FADC3 100%) !important;
+  border-image-source: linear-gradient(180deg, #FFFFFF 0%, #627599 100%) !important;
+  border: 0.56px solid white !important;
+  box-shadow: 0px 1.11px 1.67px 0px rgba(33, 31, 31, 1) !important;
+  width: 26px !important;
+  height: 26px !important;
+  top: -3px !important;
+  left: -3px !important;
+}
+
+.customSwitch .react-switch-bg {
+  /* background: linear-gradient(0deg, #A5B1C6, #A5B1C6),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+  border: 0.32px solid rgba(255, 255, 255, 1) !important; */
+  border-radius: 16px !important;
+  width: 44px !important;
+  height: 20px !important;
+}
+
+/* Media query for < sm screens */
+@media (max-width: 650px) {
+  .customSwitch .react-switch-handle {
+    width: 16px !important;
+    height: 16px !important;
+    top: -2px !important;
+  }
+  .customSwitch.unchecked .react-switch-handle {
+    left: -13px !important;
+    background: var(--Primary, rgba(95, 219, 197, 1));
+  }
+  .customSwitch.checked .react-switch-handle {
+    left: -2px !important;
+    background: var(--Disable-Field, rgba(255, 255, 255, 0.2)) !important;
+  }
+  .customSwitch .react-switch-bg {
+    width: 26px !important;
+    height: 12px !important;
+  }
+}
+
+.customInputPlaceholder::placeholder {
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 0;
+  font-size: 18px;
+}
+
+.checkCircleIcon {
+  background: linear-gradient(106.8deg, #24C083 18.04%, #24C083 18.04%, #60F0B8 96.2%) !important;
+}
+
+.discountInputPlaceholder::placeholder {
+  color: #C9D2E2;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+*::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+  height: 6px;
+  cursor: pointer;
+}
+
+.defaultPlaceholder::placeholder {
+  color: white;
+}
+
+.customPlaceholder::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding-top: 1px;
+}
+
+.customFavorite {
+  background: linear-gradient(180deg, #1C76FF -50%, rgba(28, 118, 255, 0) 50%);
+  background-color: rgba(6, 11, 39, 0.8) !important;
+}
+
+.customShare {
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+.customBorder {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.customHeight_drawer {
+  height: 98% !important;
+  max-width: 450px !important;
+}
+
+@media (max-width: 650px) {
+  .customPlaceholder::placeholder {
+    font-size: 12px;
+  }
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+ opacity: 0;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus:-moz-placeholder {
+ opacity: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+  height: 6px;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-track {
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(177, 177, 177, 0.4); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(177, 177, 177, 0.4); /* creates padding around scroll thumb */
+  cursor: pointer;
+}
+
+.fontItem {
+  color: rgba(0, 0, 0, 1) !important;
+  line-height: 21px !important;
+}

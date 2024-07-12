@@ -1,0 +1,86 @@
+{
+  "name": "Diamond Swap ETH Mainnet",
+  "timestamp": "2022-07-07T15:57:01.868Z",
+  "version": {
+    "major": 4,
+    "minor": 1,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://uploads-ssl.webflow.com/625be0c2bb881f5072b74d72/62739d351e93acb65ed25e40_Diamond%20blue-p-500.png",
+  "keywords": ["diamondswap", "default"],
+  "tokens": [
+    {
+      "name": "Diamond Token",
+      "address": "0xbBCD93A1809239E3A4bEB1B02fa6f8a83f7000B2",
+      "symbol": "DIAMONDS",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://uploads-ssl.webflow.com/625be0c2bb881f5072b74d72/62739d351e93acb65ed25e40_Diamond%20blue-p-500.png"
+    },
+    {
+      "name": "USDCoin",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 1,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+    },
+    {
+      "name": "Tether USD",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 1,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    },
+    {
+      "name": "Dai Stablecoin",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    },
+    {
+      "name": "Wrapped BTC",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "chainId": 1,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
+    },
+    {
+      "name": "Wrapped Ether",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "WETH",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    },
+    {
+      "name": "Gr33n",
+      "address": "0x410e7696df8be2a123df2cf88808c6ddab2ae2bf",
+      "symbol": "BUILD",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://assets.coingecko.com/coins/images/26932/large/Screen-Shot-2022-08-18-at-12-15-03-PM_%281%29.png?1660887525"
+    },
+    {
+      "name": "Marshall Rogan Inu",
+      "address": "0x0913dDAE242839f8995c0375493f9a1A3Bddc977",
+      "symbol": "MRI",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://etherscan.io/token/images/marshallroganinu_32.png"
+    },
+    {
+      "name": "By Frens For Frens",
+      "address": "0x084FE7aa7B09e539eCBAD29dBCE00fcE1aEaB183",
+      "symbol": "BFF",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://bff.claimdapp.net/bfflogo.png"
+    }
+  ]
+}
