@@ -282,7 +282,7 @@ function ClaimModal({ item, viewIndex, setViewIndex, buttonFlag, setButtonFlag, 
             </div>
           </div>
           <div className='w-full flex flex-col gap-2'>
-            <p className='text-[rgba(100,116,139,1)] text-xs font-[Inter]'>Amount Received</p>
+            <p className='text-[rgba(100,116,139,1)] text-xs font-[Inter] text-left'>Amount Received</p>
             <div className='flex gap-2 justify-start items-center'>
               <p className='text-[rgba(255,255,255,0.8)] text-xl font-[Abel]'>{pool.userClaimedToken / 10 ** 18}</p>
               <p className='text-[rgba(255,255,255,0.8)] text-sm font-[Inter]'>Tokens</p>
@@ -378,7 +378,7 @@ function ClaimModal({ item, viewIndex, setViewIndex, buttonFlag, setButtonFlag, 
             })}
           </div>
         )}
-        <div className='customShare flex gap-1 py-2 w-full justify-center items-center bg-[rgba(255,255,255,0.05)] rounded-full text-[rgba(255,255,255,0.8)] text-xs font-[Inter]'
+        <div className='customShare customBorder flex gap-1 py-2 w-full justify-center items-center bg-[rgba(255,255,255,0.05)] rounded-full text-[rgba(255,255,255,0.8)] text-xs font-[Inter]'
           onClick={() => handleClickDetail(index)}
         >
           {index === clickDetailIndex && clickDetail ? 'Collapse details' : 'Share details'}

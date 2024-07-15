@@ -468,7 +468,7 @@ function TxHistorySellContainer () {
                     })}
                   </div>
                 )}
-                <div className='customShare flex gap-1 py-2 w-full justify-center items-center bg-[rgba(255,255,255,0.05)] rounded-full text-[rgba(255,255,255,0.8)] text-xs font-[Inter]'
+                <div className='customShare customBorder flex gap-1 py-2 w-full justify-center items-center bg-[rgba(255,255,255,0.05)] rounded-full text-[rgba(255,255,255,0.8)] text-xs font-[Inter]'
                   onClick={() => handleClickDetail(index)}
                 >
                   {index === clickDetailIndex && clickDetail ? 'Collapse details' : 'Share details'}
