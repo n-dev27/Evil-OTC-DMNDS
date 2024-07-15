@@ -87,7 +87,7 @@ function Layout(props) {
               <Drawer 
                 open={chainFlag} 
                 onClose={() => setChainFlag(false)} 
-                className="customHeight_drawer rounded-[20px] bg-[rgba(6,30,50,1)] z-[100] fixed top-2 p-4 border sm:border-2 border-[rgba(255,255,255,0.1)] border-solid shadow-[0_12px_24px_0_rgba(0,0,0,0.16)]"
+                className="customHeight_drawer rounded-[20px] bg-[rgba(22,41,48,1)] z-[100] fixed top-2 p-4 border sm:border-2 border-[rgba(255,255,255,0.1)] border-solid shadow-[0_12px_24px_0_rgba(0,0,0,0.16)]"
               >
                 <form className="mb-6 flex w-full items-center justify-center">
                   <input
