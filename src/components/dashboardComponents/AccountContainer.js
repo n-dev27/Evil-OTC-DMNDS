@@ -4,7 +4,7 @@ import CopyToClipboard from '../../utils/CopyToClipboard.js'
 
 const style = {
   content:
-    'customShare customBorder bg-[rgba(40,24,85,0.6)] rounded-2xl p-2 md:p-4 text-center',
+    'customShare customBorder bg-[rgba(22,41,48,0.8)] rounded-2xl p-2 md:p-4 text-center',
   clipboardIcon: 'ml-1 mt-1 items-center justify-center w-4 h-4 cursor-pointer',
 }
 

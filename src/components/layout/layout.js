@@ -118,7 +118,7 @@ function Layout(props) {
               </Drawer>
             </CustomDrawer>
           )}
-          <div className='customBorder customShare h-[calc(100vh-82px)] sm:h-[calc(100vh-40px)] m-1 sm:m-5 bg-[rgba(40,24,85,0.6)] sm:bg-[rgba(40,24,85,0.2)] rounded-lg sm:rounded-xl '>
+          <div className='customBorder customShare h-[calc(100vh-82px)] sm:h-[calc(100vh-40px)] m-1 sm:m-5 bg-[rgba(22,41,48,0.8)] sm:bg-[rgba(22,41,48,0.5)] rounded-lg sm:rounded-xl '>
             <div className={`${isBuyMobile ? '' : 'z-40'} sticky top-0`}>
               <MainNavigation />
             </div>
@@ -126,7 +126,7 @@ function Layout(props) {
               {props.children}
             </div>
           </div>
-          <div className='relative z-40 flex items-center m-1 lg:hidden h-[70px] bg-[rgba(40,24,85,0.6)] rounded-lg border border-[rgba(255,255,255,0.1)] shadow-[rgba(0,0,0,0.16)]'>
+          <div className='relative z-40 flex items-center m-1 lg:hidden h-[70px] bg-[rgba(22,41,48,0.8)] rounded-lg border border-[rgba(255,255,255,0.1)] shadow-[rgba(0,0,0,0.16)]'>
             <Link
               href='/history'
               className={`${router.pathname === '/history' ? 'bg-[rgba(255,255,255,0.05)]' : ''} w-1/4 h-full flex flex-col gap-2 justify-center items-center hover:bg-[rgba(255,255,255,0.2)] hover:rounded-l-lg cursor-pointer`}

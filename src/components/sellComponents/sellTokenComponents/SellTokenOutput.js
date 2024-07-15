@@ -8,7 +8,7 @@ import { countLeadingZerosAfterDecimal } from '../../../utils/countDecimals';
 
 const style = {
   sellOutput: 'customShare flex w-full h-[90px] sm:min-h-[140px] justify-between bg-[rgba(255,255,255,0.05)] rounded-[6px] sm:rounded-[8px] p-4 sm:p-6',
-  sellOutputText: 'w-full text-[10px] sm:text-base text-[rgba(255,255,255,0.5)] font-[Inter_Regular]',
+  sellOutputText: 'w-full text-[10px] sm:text-base text-[rgba(255,255,255,0.5)] font_Inter',
   sellOutputBalanceContainer: 'flex flex-col items-center',
   sellOutputBalance: 'flex w-full justify-end items-center gap-2',
   sellOutputSelector: 'flex justify-start',

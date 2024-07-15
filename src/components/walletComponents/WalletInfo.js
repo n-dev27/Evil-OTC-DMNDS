@@ -8,7 +8,7 @@ import searchIcon from '../../assets/search_icon.svg'
 const style = {
   walletContainer: `flex w-fit items-center justify-start sm:gap-2`,
   networkInfo: `group inline-flex items-center text-white w-fit sm:min-w-[76px] h-full sm:h-10 pt-3 sm:pt-0 focus:outline-none`,
-  chainSelector: `customBorder min-w-[220px] left-[5%] grid absolute bg-[rgba(40,24,85,0.6)] p-2 mt-5 overflow-hidden rounded-lg shadow-lg ring-2 ring-black ring-opacity-5`,
+  chainSelector: `customBorder min-w-[220px] left-[5%] grid absolute bg-[rgba(22,41,48,0.8)] p-2 mt-5 overflow-hidden rounded-lg shadow-lg ring-2 ring-black ring-opacity-5`,
   chainItem: `px-2 py-1 justify-center items-center drop-shadow-md text-[#B6C2D7] hover:bg-[#dbd7d7] hover:text-[#566B90] text-[1.0rem] cursor-pointer rounded-3xl`,
   icon: `flex w-full gap-2 justify-center items-center bg-[rgba(255,255,255,0.1)] h-8 sm:h-11 text-md rounded-[12px] border-[1.5px] border-[rgba(255,255,255,0.1)] shadow-[rgba(0,0,0,0.16)]`,
   IconContainer: `flex items-center justify-center`,

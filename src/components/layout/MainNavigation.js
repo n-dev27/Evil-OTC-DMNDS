@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useAccount } from 'wagmi';
 import { useTheme } from 'next-themes';
 import { SunIcon, MoonIcon, ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
-import diamondswapLogo from '../../assets/poolParty_logo.svg';
-import smallDMNDSLogo from '../../assets/small_logo.svg';
+import diamondswapLogo from '../../assets/doctor_logo.svg';
+import smallDMNDSLogo from '../../assets/Doctor.svg';
 import WalletInfo from '../walletComponents/WalletInfo';
 import SelectWalletModal from '../walletComponents/SelectWalletModal';
 import { LayoutContext } from './layout';
@@ -20,7 +20,7 @@ const style = {
   mobileNavItemsContainer: `flex sm:hidden justify-between sm:justify-center items-center w-full llg:w-fit lp:gap-x-24`,
   HPNavItem: `min-w-[140px] flex justify-center items-center text-[rgba(255,255,255,0.5)] text-lg font-medium font-[Inter] py-3 hover:bg-[rgba(28,118,255,0.2)] rounded-full`,
   MNavItem: `h-8 sm:h-12 bg-[#2C354A] rounded-xl px-[30px] ssm:px-12 flex items-center justify-center text-xs ssm:text-base text-[rgba(255,255,255,0.5)] font-bold`,
-  activeNavItem: ` bg-[rgba(95,219,197,1)] hover:bg-[rgba(95,219,197,1)] !text-[rgba(0,0,0,1)]`,
+  activeNavItem: ` bg-[rgba(70,147,163,1)] hover:bg-[rgba(70,147,163,0.8)] !text-[rgba(255,255,255,0.8)]`,
   endContainer: `flex w-fit sm:w-[262px] h-8 sm:h-full justify-end items-center`,
   mobile: `mxl:hidden absolute bg-[#E6ECF2] dark:bg-[#727578] rounded-3xl`,
   mobileIcon: `justify-center items-center p-2 hover:bg-[#dbd7d7] rounded-3xl`,

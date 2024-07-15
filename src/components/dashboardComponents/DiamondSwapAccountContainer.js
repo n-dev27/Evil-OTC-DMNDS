@@ -56,7 +56,7 @@ const DiamondSwapAccountContainer = () => {
   })
 
   return (
-    <div className="customShare customBorder md:text-large justify-center rounded-2xl border p-4 px-8 text-center text-sm text-[rgba(255,255,255,0.8)] bg-[rgba(40,24,85,0.6)]">
+    <div className="customShare customBorder md:text-large justify-center rounded-2xl border p-4 px-8 text-center text-sm text-[rgba(255,255,255,0.8)] bg-[rgba(22,41,48,0.8)]">
       <dl>
         <div>
           <h1 className="text-xl text-[rgba(255,255,255,0.8)] font-[Inter_Bold]">Diamond Swap Balances</h1>

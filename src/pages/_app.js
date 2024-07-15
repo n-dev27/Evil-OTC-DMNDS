@@ -24,14 +24,14 @@ function App({ Component, pageProps }) {
           <WagmiConfig config={wagmiConfig}>
             <Layout>
               <Head>
-                <link rel="icon" href="favicon.png" />
+                <link rel="icon" href="favoicon.ico" />
                 {/* <link href="https://www.cdnfonts.com/helvetica-neue-55.font" rel="canonical" /> */}
                 {/* <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" /> */}
                 <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>Diamond Swap</title>
+                <title>Doctor Evil</title>
               </Head>
               <Component {...pageProps} />
             </Layout>

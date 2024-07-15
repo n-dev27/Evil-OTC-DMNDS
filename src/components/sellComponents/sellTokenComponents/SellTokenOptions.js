@@ -27,9 +27,9 @@ const style = {
   activeDiscountOptionButton:
     'flex rounded sm:rounded-lg h-[30px] sm:h-[46px] w-full text-[rgba(255,255,255,0.8)] font-[Inter] text-xs sm:text-lg cursor-pointer justify-center items-center focus:outline-none border-[1.5px] border-[rgba(255,255,255,0.1)]',
   listforsellButton:
-    'bg-[rgba(95,219,197,1)] w-full rounded-[26px] py-3 sm:py-4 text-sm sm:text-lg text-[rgba(0,0,0,0.8)] font-[Inter] flex items-center justify-center',
+    'bg-[rgba(255,255,255,0.2)] w-full rounded-[26px] py-3 sm:py-4 text-sm sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter] flex items-center justify-center',
   disabledButton:
-    'bg-[rgba(95,219,197,1)] w-full rounded-[26px] py-3 sm:py-4 text-sm sm:text-lg text-[rgba(0,0,0,0.5)] font-[Inter] flex items-center justify-center',
+    'bg-[rgba(255,255,255,0.2)] w-full rounded-[26px] py-3 sm:py-4 text-sm sm:text-lg text-[rgba(255,255,255,0.5)] font-[Inter] flex items-center justify-center',
 }
 
 const vestingTimeframes = [
@@ -383,7 +383,7 @@ const SellTokenOptions = props => {
             setOutputTokenMarketAmount={setOutputTokenMarketAmount}
           />
 
-          <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] sm:top-[calc(50%-24px)] sm:left-[calc(50%-24px)] flex justify-center items-center bg-[rgba(25,30,78,1)] rounded-lg sm:rounded-xl x-7 h-7 sm:w-12 sm:h-12 p-2 sm:p-3'>
+          <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] sm:top-[calc(50%-24px)] sm:left-[calc(50%-24px)] flex justify-center items-center bg-[rgba(24,44,52,1)] rounded-lg sm:rounded-xl x-7 h-7 sm:w-12 sm:h-12 p-2 sm:p-3'>
             <Image src={Arrow_Icon} alt="arrow_logo" className='w-3 h-3 sm:w-5 sm:h-5'></Image>
           </div>
           <SellTokenOutput
@@ -410,14 +410,14 @@ const SellTokenOptions = props => {
           {outputTokenAmount && inputTokenAmount && (
             <div className="flex items-center justify-between py-2">
               <div className="flex flex-col gap-1">
-                <div className="flex items-center text-[rgba(255,255,255,0.5)] text-[12px] sm:text-base font-[Inter_Regular]">
+                <div className="flex items-center text-[rgba(255,255,255,0.5)] text-[12px] sm:text-base font_Inter font-normal">
                   <InformationCircleIcon className="w-3 h-3 sm:h-5 sm:w-5" color='rgba(255,255,255,0.5)'/>
                   &nbsp;1&nbsp;{outputTokenData?.symbol}&nbsp;=&nbsp;
                   {countLeadingZerosAfterDecimal(outputTokenPrice / inputTokenPrice)}&nbsp;{inputTokenData?.symbol}
                 </div>
-                <div className='text-[rgba(255,255,255,0.8)] text-[10px] sm:text-sm font-[Inter_Regular]'>
+                <div className='text-[rgba(255,255,255,0.8)] text-[10px] sm:text-sm font_Inter font-normal'>
                   Approximate slippage free gains vs traditional DEX:{' '}
-                  <a className="font-bold"> $ {countLeadingZerosAfterDecimal(percentSaved)}</a> (
+                  <a className="font-bold font_Inter"> $ {countLeadingZerosAfterDecimal(percentSaved)}</a> (
                   {countLeadingZerosAfterDecimal(tradePriceImpact)}%){' '}
                 </div>
               </div>
@@ -502,9 +502,9 @@ const SellTokenOptions = props => {
                         <RadioGroup.Option value="public">
                           {({ checked }) => (
                             <span
-                              className={`flex h-[30px] sm:h-[41px] items-center text-[rgba(255,255,255,0.8)] rounded-full border-none px-6 text-xs sm:text-sm font-[Inter] ${
+                              className={`flex h-[30px] sm:h-[41px] items-center text-[rgba(255,255,255,0.5)] rounded-full border-none px-6 text-xs sm:text-sm font-[Inter] ${
                                 checked
-                                  ? 'bg-[rgba(95,219,197,1)] py-3 outline-none focus:outline-none focus:ring-transparent !text-[rgba(0,0,0,1)]'
+                                  ? 'bg-[rgba(70,147,163,1)] py-3 outline-none focus:outline-none focus:ring-transparent !text-[rgba(255,255,255,0.8)]'
                                   : ''
                               }`}
                             >
@@ -517,9 +517,9 @@ const SellTokenOptions = props => {
                         <RadioGroup.Option value="private">
                           {({ checked }) => (
                             <span
-                              className={`flex h-[30px] sm:h-[41px] items-center text-[rgba(255,255,255,0.8)] rounded-full border-none px-6 text-xs sm:text-sm font-[Inter] ${
+                              className={`flex h-[30px] sm:h-[41px] items-center text-[rgba(255,255,255,0.5)] rounded-full border-none px-6 text-xs sm:text-sm font-[Inter] ${
                                 checked
-                                  ? 'bg-[rgba(95,219,197,1)] py-3 outline-none focus:outline-none focus:ring-transparent !text-[rgba(0,0,0,1)]'
+                                  ? 'bg-[rgba(70,147,163,1)] py-3 outline-none focus:outline-none focus:ring-transparent !text-[rgba(255,255,255,0.8)]'
                                   : ''
                               }`}
                             >
@@ -723,7 +723,7 @@ const SellTokenOptions = props => {
                                 <span
                                   className={`${
                                     checked
-                                      ? 'bg-[rgba(95,219,197,1)] font-bold !text-[rgba(0,0,0,1)]'
+                                      ? 'bg-[rgba(70,147,163,1)] font-bold !text-[rgba(255,255,255,1)]'
                                       : ''
                                   } + ${style.activeDiscountOptionButton}`}
                                 >
@@ -736,7 +736,7 @@ const SellTokenOptions = props => {
                                 <span
                                   className={`${
                                     checked
-                                      ? 'bg-[rgba(95,219,197,1)] font-bold !text-[rgba(0,0,0,1)]'
+                                      ? 'bg-[rgba(70,147,163,1)] font-bold !text-[rgba(255,255,255,1)]'
                                       : ''
                                   } + ${style.activeDiscountOptionButton}`}
                                 >
@@ -749,7 +749,7 @@ const SellTokenOptions = props => {
                                 <span
                                   className={`${
                                     checked
-                                      ? 'bg-[rgba(95,219,197,1)] font-bold !text-[rgba(0,0,0,1)]'
+                                      ? 'bg-[rgba(70,147,163,1)] font-bold !text-[rgba(255,255,255,1)]'
                                       : ''
                                   } + ${style.activeDiscountOptionButton}`}
                                 >
@@ -762,7 +762,7 @@ const SellTokenOptions = props => {
                                 <span
                                   className={`${
                                     checked
-                                      ? 'bg-[rgba(95,219,197,1)] font-bold !text-[rgba(0,0,0,1)]'
+                                      ? 'bg-[rgba(70,147,163,1)] font-bold !text-[rgba(255,255,255,1)]'
                                       : ''
                                   } + ${style.activeDiscountOptionButton}`}
                                 >
@@ -876,7 +876,7 @@ const SellTokenOptions = props => {
                           <a className="flex items-start text-[9px] sm:text-xs text-[rgba(255,255,255,0.5)] font-[Inter]">Vesting period</a>
                           <Listbox value={vestingPeriodTimeframe} onChange={setVestingPeriodTimeframe}>
                             <div className="relative cursor-pointer text-xs sm:text-base">
-                              <Listbox.Button className="flex items-center justify-between focus:outline-none relative w-full cursor-pointer rounded-lg bg-transparent text-[rgba(255,255,255,0.8)] font-[Inter_bold] focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-300 ">
+                              <Listbox.Button className="flex items-center justify-between focus:outline-none relative w-full cursor-pointer rounded-lg bg-transparent text-[rgba(255,255,255,0.8)] font-[Inter] focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-300 ">
                                 {/* {vestingPeriodTimeframe?.name ? (
                                   <>
                                     {vestingPeriodTimeframe?.name}

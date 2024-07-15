@@ -227,7 +227,7 @@ function SellTokenConfirmationModal(props) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className={`${listForSellTokenStarted && !listForSellTokenWaitForTransaction.isSuccess || listForSellTokenWaitForTransaction.isSuccess ? 'h-[418px] sm:h-[640px]' : 'max-h-[626px] sm:max-h-[754px]'} min-w-[350px] w-full sm:w-[720px] transform rounded-2xl border-[1.2px] border-[rgba(255,255,255,0.1)] bg-[rgba(40,24,85,0.6)] p-1 pt-5 sm:p-6 shadow-[rgba(0,0,0,0.16)] transition-all`}>
+                <Dialog.Panel className={`${listForSellTokenStarted && !listForSellTokenWaitForTransaction.isSuccess || listForSellTokenWaitForTransaction.isSuccess ? 'h-[418px] sm:h-[640px]' : 'max-h-[626px] sm:max-h-[754px]'} min-w-[350px] w-full sm:w-[720px] transform rounded-2xl border-[1.2px] border-[rgba(255,255,255,0.1)] bg-[rgba(22,41,48,0.8)] p-1 pt-5 sm:p-6 shadow-[rgba(0,0,0,0.16)] transition-all`}>
                   <Dialog.Title
                     as="h3"
                     className={`${listForSellTokenStarted && !listForSellTokenWaitForTransaction.isSuccess ? 'hidden' : 'flex'} flex-col gap-4 relative w-full justify-center items-center px-4`}
@@ -252,36 +252,36 @@ function SellTokenConfirmationModal(props) {
                       <div>
                         <div className="h-[440px] sm:h-[513px] overflow-y-auto py-6 px-4 text-xs sm:text-base text-[rgba(255,255,255,0.5)]">
                           <div className="flex justify-between pb-2 items-center">
-                            <div className='font-[Inter_Regular]'>Token Selling:</div>
+                            <div className='font-[Inter]'>Token Selling:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.inputTokenData?.symbol}</div>
                           </div>
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Token Selling Amount:</div>
+                            <div className='font-[Inter]'>Token Selling Amount:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{countLeadingZerosAfterDecimal(props.inputTokenAmount)}</div>
                           </div>
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Token Receiving:</div>
+                            <div className='font-[Inter]'>Token Receiving:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.outputTokenData?.symbol}</div>
                           </div>
                           <div className="flex justify-between py-2 items-center border-b-[2px] border-[rgba(255,255,255,0.1)] pb-6">
-                            <div className='font-[Inter_Regular]'>Token Receiving Amount:</div>
+                            <div className='font-[Inter]'>Token Receiving Amount:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{Number(parseFloat(props.outputTokenAmount).toFixed(4))?.toLocaleString()}</div>
                           </div>
                           <div className="flex justify-between pt-6 pb-2 items-center">
-                            <div className='font-[Inter_Regular]'>Sell Option:</div>
+                            <div className='font-[Inter]'>Sell Option:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.recipient === 'public' ? <div>public</div> : <div>private</div>}</div>
                           </div>
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Allow Partial Buys:</div>
+                            <div className='font-[Inter]'>Allow Partial Buys:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.allowPartialBuys === "yes" ? <div>Yes</div> : <div>No</div>}</div>
                           </div>
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Specific Recipient:</div>
+                            <div className='font-[Inter]'>Specific Recipient:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.recipient?.toString() == 'public' ? <div>No</div> : <div>Yes</div>}</div>
                           </div>
                           {props.recipient?.toString() == 'private' && (
                             <div className="flex justify-between py-2 items-center">
-                              <div className='font-[Inter_Regular]'>Recipient Type:</div>
+                              <div className='font-[Inter]'>Recipient Type:</div>
                               <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>
                                 {props.recipientType?.toString() == 'address' ? (
                                   <div>Address</div>
@@ -302,12 +302,12 @@ function SellTokenConfirmationModal(props) {
                             </div>
                           )}
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>New Owner:</div>
+                            <div className='font-[Inter]'>New Owner:</div>
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{props.transferAddress !== '' || props.transferHandle !== '' ? <div>Yes</div> : <div>No</div>}</div>
                           </div>
                           {props.recipient?.toString() == 'public' && props.transferPool && (
                             <div className="flex justify-between py-2 items-center">
-                              <div className='font-[Inter_Regular]'>Transfer Owner Type:</div>
+                              <div className='font-[Inter]'>Transfer Owner Type:</div>
                               <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>
                                 {props.recipientType?.toString() == 'address' ? (
                                   <div>Address</div>
@@ -350,7 +350,7 @@ function SellTokenConfirmationModal(props) {
                           )}
                           {props.vestingPeriodOption?.toString() == 'true' && (
                             <div className="flex justify-between py-2 items-center">
-                              <div className='font-[Inter_Regular]'>Initial Distribution Amount:</div>
+                              <div className='font-[Inter]'>Initial Distribution Amount:</div>
                               <div className="flex justify-end text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]">
                                 <div>
                                   {((props.inputTokenAmount * props.vestingInitialAmountPercent) / '100').toString()}{' '}
@@ -360,7 +360,7 @@ function SellTokenConfirmationModal(props) {
                             </div>
                           )}
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Vesting Period:</div>
+                            <div className='font-[Inter]'>Vesting Period:</div>
                             <div className="flex justify-end text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]">
                               <div>
                                 {props.vestingPeriodOption?.toString() == 'false' ? (
@@ -374,7 +374,7 @@ function SellTokenConfirmationModal(props) {
                             </div>
                           </div>
                           <div className="flex justify-between py-2 items-center">
-                            <div className='font-[Inter_Regular]'>Current Gas Fee:</div>{' '}
+                            <div className='font-[Inter]'>Current Gas Fee:</div>{' '}
                             <div className='text-xs sm:text-lg text-[rgba(255,255,255,0.8)] font-[Inter]'>{parseFloat(feeInfo?.formatted.gasPrice).toFixed(0)} gwei</div>
                           </div>
                           <div className="flex items-center justify-between py-2">
@@ -397,24 +397,24 @@ function SellTokenConfirmationModal(props) {
                         <div className="w-full flex-col justify-center text-center px-4 pb-4 sm:p-0">
                           <button
                             hidden={approvalComplete}
-                            className="w-full rounded-full bg-[rgba(95,219,197,1)] py-2 sm:py-4 enabled:hover:bg-[rgba(95,219,197,0.3)]"
+                            className="w-full rounded-full bg-[rgba(70,147,163,1)] py-2 sm:py-4 enabled:hover:bg-[rgba(70,147,163,0.6)]"
                             disabled={approveListTokenLoading || approveListTokenStarted}
                             onClick={() => approveListTokenWrite?.()}
                           >
-                            {approveListTokenLoading && <a className="animate-pulse text-[rgba(0,0,0,0.6)] text-xs sm:text-lg font-[Inter] font-bold">Waiting for approval</a>}
-                            {approveListTokenStarted && <a className="animate-pulse text-[rgba(0,0,0,0.6)] text-xs sm:text-lg font-[Inter] font-bold">Approving...</a>}
+                            {approveListTokenLoading && <a className="animate-pulse text-[rgba(255,255,255,0.8)] text-xs sm:text-lg font-[Inter] font-bold">Waiting for approval</a>}
+                            {approveListTokenStarted && <a className="animate-pulse text-[rgba(255,255,255,0.8)] text-xs sm:text-lg font-[Inter] font-bold">Approving...</a>}
                             {!approveListTokenLoading && !approveListTokenStarted && (
-                              <a className='text-[rgba(0,0,0,0.6)] text-xs sm:text-lg font-[Inter] font-bold'>Approve Diamond Swap to use your {props.inputTokenData?.symbol}</a>
+                              <a className='text-[rgba(255,255,255,0.8)] text-xs sm:text-lg font-[Inter] font-bold'>Approve Diamond Swap to use your {props.inputTokenData?.symbol}</a>
                             )}
                           </button>
                           <button
                             hidden={!approvalComplete}
                             disabled={listForSellTokenLoading || listForSellTokenStarted}
-                            className="w-full rounded-full bg-[rgba(95,219,197,1)] py-2 sm:py-4 enabled:hover:bg-[rgba(95,219,197,0.3)]"
+                            className="w-full rounded-full bg-[rgba(70,147,163,1)] py-2 sm:py-4 enabled:hover:bg-[rgba(70,147,163,0.6)]"
                             onClick={() => listForSellTokenWrite?.()}
                           >
-                            {listForSellTokenLoading && <a className="animate-pulse text-[rgba(0,0,0,0.5)] text-xs sm:text-lg font-[Inter] font-bold">Waiting for confirmation</a>}
-                            {!listForSellTokenLoading && !listForSellTokenStarted && <a className='text-[rgba(0,0,0,0.5)] text-xs sm:text-lg font-[Inter] font-bold'>List for sell</a>}
+                            {listForSellTokenLoading && <a className="animate-pulse text-[rgba(255,255,255,0.6)] text-xs sm:text-lg font-[Inter] font-bold">Waiting for confirmation</a>}
+                            {!listForSellTokenLoading && !listForSellTokenStarted && <a className='text-[rgba(255,255,255,0.6)] text-xs sm:text-lg font-[Inter] font-bold'>List for sell</a>}
                           </button>
                           {/* {approveListTokenError && (
                             <div className="xs:text-xs p-1 text-center text-red-500">

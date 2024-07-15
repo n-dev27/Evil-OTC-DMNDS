@@ -10,7 +10,7 @@ import coinbaseLogo from '../../assets/cbw.svg'
 const style = {
   buttonContainer: `flex`,
   icon: `flex justify-start p-1`,
-  button: `h-8 sm:h-11 min-w-[150px] sm:min-w-[174px] flex justify-center items-center hover:bg-[rgba(28,118,255,0.2)] text-white text-sm sm:text-lg cursor-pointer rounded-[12px] border-[1.5px] border-[rgba(255,255,255,0.1)] shadow-[rgba(0,0,0,0.16)]`,
+  button: `h-8 sm:h-11 min-w-[150px] sm:min-w-[174px] flex justify-center items-center hover:bg-[rgba(22,41,48,0.8)] text-white text-sm sm:text-lg cursor-pointer rounded-[12px] border-[1.5px] border-[rgba(255,255,255,0.1)] shadow-[rgba(0,0,0,0.16)]`,
   buttonPadding: `px-3 py-4`,
   disclosure: `bg-[rgba(255,255,255,0.05)] text-[rgba(255,255,255,0.6)] text-sm rounded-xl px-4 py-2 text-left`,
   walletButtonContainer: `gap-3 flex flex-col w-full`,
@@ -73,7 +73,7 @@ export default function SelectWalletModal() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="customShare customBorder inline-block max-w-md transform overflow-hidden rounded-2xl bg-[rgba(40,24,85,0.6)] p-6 align-middle shadow-xl transition-all">
+              <div className="customShare customBorder inline-block max-w-md transform overflow-hidden rounded-2xl bg-[rgba(22,41,48,0.8)] p-6 align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
                   className="p-2 text-center text-sm leading-6 text-[rgba(255,255,255,0.8)] md:text-lg font-[Inter]"

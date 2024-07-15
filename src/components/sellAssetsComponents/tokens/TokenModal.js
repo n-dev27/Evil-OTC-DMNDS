@@ -339,14 +339,14 @@ const TokenModal = props => {
                     }
                   />
                 </div>
-                <div className="flex justify-center items-center text-[rgba(255,255,255,0.8)] text-sm sm:text-xl font-[Inter_Bold]" style={{letterSpacing: '2px'}}>
+                <div className="flex justify-center items-center text-[rgba(255,255,255,0.8)] text-sm sm:text-xl font_Inter font-bold" style={{letterSpacing: '2px'}}>
                   {selectedToken.symbol}
                 </div>
               </div>
               <ChevronRightIcon className="text-[rgba(255,255,255,0.4)] w-5 h-5" />
             </div>
           ) : (
-            <div className="flex w-max items-center justify-center text-[rgba(255,255,255,0.8)] text-sm sm:text-xl font-[Inter_Bold] gap-1">
+            <div className="flex w-max items-center justify-center text-[rgba(255,255,255,0.8)] text-sm sm:text-xl font_Inter font-bold gap-1">
               Select a token
               <ChevronRightIcon className="text-[rgba(255,255,255,0.4)] h-5 w-5 pt-[2px]" />
             </div>
@@ -382,11 +382,11 @@ const TokenModal = props => {
                 leaveTo="opacity-0 scale-95"
               >
 
-                <Dialog.Panel className="h-screen sm:h-[574px] w-full sm:w-[655px] transform sm:rounded-2xl bg-[rgba(40,24,85,0.6)] p-5 sm:p-10 text-left align-middle shadow-[rgba(0,0,0,0.16)] transition-all border-[1.2px] border-[rgba(255,255,255,0.1)]">
+                <Dialog.Panel className="h-screen sm:h-[574px] w-full sm:w-[655px] transform sm:rounded-2xl bg-[rgba(22,41,48,0.8)] p-5 sm:p-10 text-left align-middle shadow-[rgba(0,0,0,0.16)] transition-all border-[1.2px] border-[rgba(255,255,255,0.1)]">
 
                   <Dialog.Title
                     as="h3"
-                    className="flex justify-between items-center text-2xl sm:text-3xl font-[Inter_Bold] leading-6 text-[rgba(255,255,255,0.6)]"
+                    className="flex justify-between items-center text-2xl sm:text-3xl font_Inter font-bold leading-6 text-[rgba(255,255,255,0.6)]"
                     >
                     Select a token
                     <button
@@ -551,10 +551,10 @@ const TokenModal = props => {
                                     <img className="items-center justify-center rounded-full" src={token.logoURI} />
                                   </div>
                                   <div className="p-4 text-start flex items-center gap-4">
-                                    <div className="text-[rgba(255,255,255,0.8)] font-[Inter] text-base sm:text-xl">
+                                    <div className="text-[rgba(255,255,255,0.8)] font_Inter font-medium text-base sm:text-xl">
                                       {token.symbol}
                                     </div>
-                                    <div className='text-[rgba(255,255,255,0.5)] text-sm sm:text-base font-[Inter_Regular]'>({chain?.name})</div>
+                                    <div className='text-[rgba(255,255,255,0.5)] text-sm sm:text-base font_Inter font-normal'>({chain?.name})</div>
                                     {/* <div className="text-[0.7rem] text-gray-400 md:text-xs">{token.address}</div> */}
                                   </div>
                                 </div>
@@ -632,10 +632,10 @@ const TokenModal = props => {
                                 <img className="items-center justify-center rounded-full" src={chainLogo} />
                               </div>
                               <div className='p-4 text-start flex items-center gap-4'>
-                              <div className="text-[rgba(255,255,255,0.8)] font-[Inter] text-base sm:text-xl">
+                              <div className="text-[rgba(255,255,255,0.8)] font_Inter font-medium text-base sm:text-xl">
                                 {chain?.nativeCurrency?.symbol}
                               </div>
-                              <div className='text-[rgba(255,255,255,0.5)] text-base font-[Inter_Regular]'>({chain?.name})</div>
+                              <div className='text-[rgba(255,255,255,0.5)] text-base font_Inter font-normal'>({chain?.name})</div>
                               </div>
                             </div>
                             {selectedToken?.symbol === chain?.nativeCurrency?.symbol && (

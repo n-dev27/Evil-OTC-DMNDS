@@ -7,7 +7,7 @@ const style = {
   wrapper: 'flex justify-center sm:py-5',
   wrapperWidget: 'flex p-0 justify-center w-[26rem]',
   sellContainer:
-    'flex flex-col gap-4 w-full max-w-[568px] h-[calc(100vh-160px)] sm:max-h-[calc(100vh-200px)] sm:h-fit sm:bg-[rgba(40,24,85,0.6)] border-none sm:border-[1.2px] sm:border-solid sm:border-[rgba(255,255,255,0.1)] shadow-none sm:shadow-[0_6px_20px_0_rgba(0,0,0,0.16)] rounded-[16px] p-0 sm:py-5 sm:px-2',
+    'flex flex-col gap-4 w-full max-w-[568px] h-[calc(100vh-160px)] sm:max-h-[calc(100vh-200px)] sm:h-fit sm:bg-[rgba(22,41,48,0.8)] border-none sm:border-[1.2px] sm:border-solid sm:border-[rgba(255,255,255,0.1)] shadow-[0_6px_20px_0_rgba(0,0,0,0.16)] rounded-[16px] p-0 sm:py-5 sm:px-2',
   sellContainerWidget:
     'w-full bg-gradient-to-b from-[#FFFFFF]/60 to-[#FFFFFF]/40 dark:bg-gradient-to-b dark:from-slate-600/60 dark:dark:to-slate-600/40 border border-white dark:border-black rounded-3xl p-2',
   sellBody: 'flex flex-col w-full h-full px-4 py-2 sm:px-3 justify-between sm:justify-start overflow-y-auto overflow-x-hidden',

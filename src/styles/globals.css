@@ -14,17 +14,17 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../assets/font/Centrale Sans Medium.otf") format("truetype");
+  src: url("../assets/font/Belanosima-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter_Bold";
-  src: url("../assets/font/Centrale Sans Bold.otf") format("truetype");
+  src: url("../assets/font/Belanosima-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter_Regular";
-  src: url("../assets/font/Centrale Sans Regular.otf") format("truetype");
+  font-family: "Inter_SemiBold";
+  src: url("../assets/font/Belanosima-SemiBold.ttf") format("truetype");
 }
 
 .font_Inter {
@@ -35,8 +35,8 @@
   font-family: Inter_Bold;
 }
 
-.font_Inter_Regular {
-  font-family: Inter_Regular;
+.font_Inter_SemiBold {
+  font-family: Inter_SemiBold;
 }
 
 .tab_container > div {

@@ -8,12 +8,12 @@ import { countLeadingZerosAfterDecimal } from '../../../utils/countDecimals';
 
 const style = {
   sellInput: 'customShare flex w-full h-[90px] sm:min-h-[140px] justify-between bg-[rgba(255,255,255,0.05)] rounded-[6px] sm:rounded-[8px] p-4 sm:p-6',
-  sellInputText: 'w-full text-[10px] sm:text-base text-[rgba(255,255,255,0.5)] font-[Inter_Regular]',
+  sellInputText: 'w-full text-[10px] sm:text-base text-[rgba(255,255,255,0.5)] font_Inter',
   sellInputBalanceContainer: 'flex flex-col',
   sellInputBalance: 'flex w-full justify-end items-center gap-2',
   sellInputSelector: 'flex justify-start',
   sellInputMaxButton:
-    'flex justify-center text-[rgba(28,118,255,1)] text-xs sm:text-base font-semibold font_Inter items-center hover:animate-pulse rounded-md',
+    'flex justify-center text-[rgba(28,118,255,1)] text-xs sm:text-base font-bold font_Inter items-center hover:animate-pulse rounded-md',
   sellInputInputContainer: 'flex justify-end items-center text-white text-[2rem] sm:pt-3',
   sellInputAmount:
     'defaultPlaceholder flex w-full justify-end text-white font-[Abel] sm:font-bold bg-transparent text-xl sm:text-3xl border-none outline-none focus:outline-none focus:ring-transparent text-end p-0',
