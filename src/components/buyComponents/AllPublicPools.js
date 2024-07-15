@@ -649,7 +649,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               values[1]
                               ? ''
                               : 'hidden'
-                          } relative min-h-[107px] text-center gap-2 mt-5 flex flex-col rounded-xl border border-[rgba(255,255,255,0.1)] border-solid bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] hover:border-[rgba(28,118,255,1)] hover:shadow-[0_0_0_2px_rgba(255,255,255,0.1)]`}
+                          } relative min-h-[107px] text-center gap-2 mt-5 flex flex-col rounded-xl border border-[rgba(255,255,255,0.1)] border-solid bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] hover:border-[rgba(255,0,0,1)] hover:shadow-[0_0_0_2px_rgba(255,255,255,0.1)]`}
                           >
                             <div className={`${favPoolList[index] === true ? 'bg-[rgba(255,216,13,0.1)]' : 'bg-[rgba(255,255,255,0.05)]'} z-20 absolute top-[-16px] left-[-16px] cursor-pointer rounded-full w-9 h-9 flex justify-center items-center shadow-[rgba(0,0,0,0.16)] border border-[rgba(255,255,255,0.1)]`}
                               onClick={() => handleFavorite(index, pool)}
