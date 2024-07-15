@@ -32,7 +32,7 @@ import { chains } from '../layout/layout';
 const style = {
   wrapper: 'flex sm:px-8 sm:pt-5 sm:pb-6 justify-center h-full w-full',
   buyContainer:
-    'customShare relative h-full xs:flex-col md:flex sm:pt-8 w-full sm:bg-[rgba(6,11,39,0.8)] shadow-[rgba(0,0,0,0.16)] rounded-[20px]',
+    'customShare relative h-full xs:flex-col md:flex sm:pt-8 w-full sm:bg-[rgba(22,41,48,0.8)] shadow-[rgba(0,0,0,0.16)] rounded-[20px]',
   backContainer:
     'h-full overflow-y-auto xs:flex-col w-full justify-center rounded-xl',
   nav: `flex justify-stretch max-w-[530px] w-5/6 m-auto bg-white bg-opacity-10 border border-slate-400 border-opacity-5 rounded-lg`,
@@ -105,7 +105,7 @@ const StyledTabs = styled(Tabs)`
         & > div.absolute { /* div.absolute inside li */
           align-items: center;
           box-shadow: -12.572383880615234px 18.85857582092285px 25.14476776123047px 0px rgba(130, 149, 179, 0.24);
-          background-color: rgba(28, 118, 255, 1) ;
+          background-color: rgba(70, 147, 163, 1) ;
           text-align: center;
           border-radius: 9999rem;
         }
@@ -161,7 +161,7 @@ export default function BuyLayout({ poolRouter }) {
   const router = useRouter();
   
   const { loading, error, data, refetch } = useQuery(GET_POOL_INFO);
-  const { chainKey, setChainKey, chainFlag, setChainFlag, hotButtonFlag, isBuyMobile, setIsBuyMobile, routerPath, setSelectedOne, setToken, showButton, setShowButton } = useContext(LayoutContext);
+  const { isFavmobile, setIsFavMobile, chainKey, setChainKey, chainFlag, setChainFlag, hotButtonFlag, isBuyMobile, setIsBuyMobile, routerPath, setSelectedOne, setToken, showButton, setShowButton } = useContext(LayoutContext);
   const [key, setKey] = useState(Math.random()); // initialize with random key 
   const [isNarrowScreen, setIsNarrowScreen] = useState(false); // Default to false
   const [discountListing, setDiscountListing] = useState([]);
@@ -583,7 +583,7 @@ export default function BuyLayout({ poolRouter }) {
                     </TabPanel>
                   }
                   <TabPanel value="buyTokens" className='p-0'>
-                      <PoolSearch setIsChartFlag={setIsChartFlag} setIsFavorite={setIsFavorite} setDiscountListing={setDiscountListing} poolRouterAddress={poolRouterAddress} showShareModal={showShareModal} setShowShareModal={setShowShareModal} poolInfo={poolInfo} setPoolInfo={setPoolInfo} favPoolFlag={favPoolFlag} setFavPoolFlag={setFavPoolFlag} favArray={favArray} setFavArray={setFavArray}  isConnected={isConnected} tokenAddress={query.tokenAddress} formattedPoolsData={formattedPoolsData} setFormattedPoolsData={setFormattedPoolsData} dataList={allData} loading={loading} setIsBuyFlag={setIsBuyFlag} setModalKey={setModalKey} />
+                      <PoolSearch setIsChartFlag={setIsChartFlag} setIsFavorite={setIsFavorite} setIsFavMobile={setIsFavMobile} setDiscountListing={setDiscountListing} poolRouterAddress={poolRouterAddress} showShareModal={showShareModal} setShowShareModal={setShowShareModal} poolInfo={poolInfo} setPoolInfo={setPoolInfo} favPoolFlag={favPoolFlag} setFavPoolFlag={setFavPoolFlag} favArray={favArray} setFavArray={setFavArray}  isConnected={isConnected} tokenAddress={query.tokenAddress} formattedPoolsData={formattedPoolsData} setFormattedPoolsData={setFormattedPoolsData} dataList={allData} loading={loading} setIsBuyFlag={setIsBuyFlag} setModalKey={setModalKey} />
                   </TabPanel>
                   <TabPanel value="twitterTokens">
                     {(

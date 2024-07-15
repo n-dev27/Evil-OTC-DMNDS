@@ -39,7 +39,7 @@ export default function ShareModal({ isOpen, setIsOpen, poolInfo }) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-[38rem] transform overflow-hidden rounded-2xl shadow bg-[rgba(6,11,39,0.8)] text-left align-middle transition-all border border-[rgba(255,255,255,0.1)]">
+                <Dialog.Panel className="w-full max-w-[38rem] transform overflow-hidden rounded-2xl shadow bg-[rgba(22,41,48,0.8)] text-left align-middle transition-all border border-[rgba(255,255,255,0.1)]">
                   <div className="flex items-center justify-between p-4 md:p-5">
                     <h3 className="text-lg text-[rgba(255,255,255,0.8)] font-[Inter] font-semibold">
                       Share link

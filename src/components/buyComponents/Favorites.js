@@ -16,7 +16,7 @@ import { countLeadingZerosAfterDecimal } from '../../utils/countDecimals';
 import isEmpty from '../../utils/isEmpty';
 import diamondSwapABI from '../../constants/contracts/diamondABI.json';
 import star_1 from '../../assets/star_1.svg';
-import Group from '../../assets/Group.svg';
+import Group from '../../assets/favorite_empty.svg';
 import back from '../../assets/back_logo.svg';
 import chart_logo from '../../assets/chart.svg';
 import group_chart from '../../assets/group_chart.svg';
@@ -27,7 +27,7 @@ import checkLogo from '../../assets/check_logo.svg'
 const style = {
   wrapper: 'flex px-8 pt-5 pb-8 justify-center h-full w-full',
   buyContainer:
-    'relative h-full overflow-y-auto xs:flex-col md:flex pt-8 w-2/3 bg-[rgba(6,11,39,0.8)] shadow-[rgba(0,0,0,0.16)] rounded-[20px]',
+    'relative h-full overflow-y-auto xs:flex-col md:flex pt-8 w-2/3 bg-[rgba(22,41,48,0.8)] shadow-[rgba(0,0,0,0.16)] rounded-[20px]',
   backContainer:
     'h-full overflow-y-auto xs:flex-col w-full justify-center rounded-xl',
   nav: `flex justify-stretch max-w-[530px] w-5/6 m-auto bg-white bg-opacity-10 border border-slate-400 border-opacity-5 rounded-lg`,
@@ -36,9 +36,9 @@ const style = {
   loadingStyle: `flex justify-center items-center`,
 
   buyButton:
-    'enabled:bg-[rgba(28,118,255,1)] disabled:bg-[#B9BCC7]/50 cursor-pointer w-full text-white px-4 py-2 rounded-xl font-semibold flex items-center justify-center',
+    'enabled:bg-[rgba(70,147,163,1)] disabled:bg-[#B9BCC7]/50 cursor-pointer w-full text-white px-4 py-2 rounded-xl font-semibold flex items-center justify-center',
   confirmationBuyButton:
-    'customShare enabled:bg-[rgba(28,118,255,1)] disabled:bg-[#B9BCC7]/50 enabled:hover:scale-105 w-full shadow text-[rgba(255,255,255,0.8)] rounded-full py-3 text-sm font-[Inter] font-semibold flex items-center justify-center enabled:cursor-pointer border-[1.2px] border-[rgba(255,255,255,0.1)]',
+    'customShare enabled:bg-[rgba(70,147,163,1)] disabled:bg-[#B9BCC7]/50 enabled:hover:scale-105 w-full shadow text-[rgba(255,255,255,0.8)] rounded-full py-3 text-sm font-[Inter] font-semibold flex items-center justify-center enabled:cursor-pointer border-[1.2px] border-[rgba(255,255,255,0.1)]',
   CancelButton: 'bg-slate-700 hover:scale-105 w-full shadow text-white rounded-3xl py-4 text-2xl font-roboto flex items-center justify-center enabled:cursor-pointer',
 
   sellInput: 'flex w-full min-h-[100px] justify-between bg-[rgba(255,255,255,0.05)] rounded-[6px] border-[0.62px] border-[rgba(255,255,255,0.1)] p-3',
@@ -47,7 +47,7 @@ const style = {
   sellInputBalance: 'flex w-full justify-end items-center gap-1',
   sellInputSelector: 'flex justify-start items-center gap-2',
   sellInputMaxButton:
-    'flex justify-center text-[rgba(28,118,255,1)] text-[10px] font-semibold font_[Inter] items-center hover:animate-pulse',
+    'flex justify-center text-[rgba(70,147,163,1)] text-[10px] font-bold font_Inter items-center hover:animate-pulse',
   sellInputInputContainer: 'flex justify-end items-center pt-1',
   sellInputAmount:
     'defaultPlaceholder flex w-full justify-end text-[rgba(255,255,255,0.8)] font-[Abel] bg-transparent text-[20px] border-none outline-none focus:outline-none focus:ring-transparent text-end p-0',
@@ -387,7 +387,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
               </div>
               <div className='flex flex-col gap-3 justify-center items-center'>
                 <Image src={chart_logo} alt='chart' ></Image>
-                <button className='text-[rgba(28,118,255,1)] text-xs font-[Inter] cursor-pointer'
+                <button className='text-[rgba(70,147,163,1)] text-xs font-[Inter] cursor-pointer'
                   onClick={() => {
                     setIsChartFlag(true);
                     setIsFavorite(false);
@@ -433,7 +433,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
           </div>
 
           <div className='w-full flex flex-col gap-[10px]'>
-            <button className={`font-[Inter] font-semibold py-3 rounded-full bg-[rgba(28,118,255,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
+            <button className={`font_Inter font-bold py-3 rounded-full bg-[rgba(70,147,163,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
               onClick={() => {
                 setIsBuyFlag(true);
                 setIsFavorite(false);
@@ -668,7 +668,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
               </div>
             </div>
 
-            <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] flex justify-center items-center bg-[rgba(15,23,54,1)] rounded-[7px] x-7 h-7 p-[7px]'>
+            <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] flex justify-center items-center bg-[rgba(60,34,40,1)] rounded-[7px] x-7 h-7 p-[7px]'>
               <Image src={Arrow_Icon} alt="arrow_logo" className='w-[14px] h-[14px]'></Image>
             </div>
 
@@ -809,7 +809,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
       )}
 
       {!isFavorite && !isChartFlag && !isBuyFlag && (
-        <div className={`customShare w-full xl:min-w-[458px] xl:w-1/3 h-full xs:flex-col xl:bg-[rgba(6,11,39,0.8)] rounded-2xl xl:px-4 pt-6 xl:pt-10`}>
+        <div className={`customShare w-full xl:min-w-[458px] xl:w-1/3 h-full xs:flex-col xl:bg-[rgba(22,41,48,0.8)] rounded-2xl xl:px-4 pt-6 xl:pt-10`}>
         {showShareModal && (
           <ShareModal isOpen={showShareModal} setIsOpen={setShowShareModal} poolInfo={poolInfo} />
         )}
@@ -908,7 +908,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                             <Image className='w-3 h-3' src={star_1} alt='star_logo' ></Image>
                           </div>
                           <div className='absolute w-full flex justify-end'>
-                            <div className='flex justify-center items-center bg-[rgba(28,118,255,0.8)] text-white text-[9px] font_[Inter] font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-2xl'>
+                            <div className='flex justify-center items-center bg-[rgba(255,0,0,1)] text-white text-[9px] font_Inter font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-2xl'>
                               {pool.listingType ? 'FIXED PRICE LISTING' : 'MARKET PRICE LISTING'}
                             </div>
                           </div>
@@ -1096,7 +1096,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="customShare bg-[rgba(6,11,39,1)] w-full h-screen flex flex-col p-5 pb-10">
+                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col p-5 pb-10">
                     <div className='w-full flex gap-2 items-center justify-between'>
                       <button className='customShare flex justify-center items-center w-11 h-11 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] rounded-full border-[1.2px] border-[rgba(255,255,255,0.1)]'
                         onClick={() => {
@@ -1199,7 +1199,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                               <p className='text-[rgba(255,255,255,0.8)] text-xs font-[Inter]'>${parseFloat(isEmpty(favValues) ? marketPrices[clickIndex]?.priceUsd : favValues?.marketPrices?.priceUsd).toFixed(2)} USD</p>
                             </div>
                             <div className='flex flex-col gap-3 justify-center items-center w-1/2'>
-                              <button className='text-[rgba(28,118,255,1)] text-xs font-[Inter] cursor-pointer'
+                              <button className='text-[rgba(70,147,163,1)] text-xs font-[Inter] cursor-pointer'
                                 onClick={() => {
                                   setIsChartMobile(true);
                                 }}
@@ -1241,7 +1241,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                       </div>
 
                       <div className='w-full flex flex-col gap-[10px]'>
-                        <button className={`font-[Inter] font-semibold py-3 rounded-full bg-[rgba(28,118,255,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
+                        <button className={`font_Inter font-bold py-3 rounded-full bg-[rgba(70,147,163,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
                           onClick={() => {
                             setIsBuyMobile(true);
                           }}
@@ -1280,7 +1280,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="customShare bg-[rgba(6,11,39,1)] w-full h-screen flex flex-col justify-between p-5 py-10">
+                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col justify-between p-5 py-10">
                   <button
                     type="button"
                     className="absolute top-7 right-5 h-6 w-6 flex items-center justify-center rounded-md border border-transparent bg-transparent hover:bg-[rgba(255,255,255,0.2)] text-center"
@@ -1379,7 +1379,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                         </div>
                       </div>
 
-                      <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] flex justify-center items-center bg-[rgba(15,23,54,1)] rounded-[7px] x-7 h-7 p-[7px]'>
+                      <div className='absolute top-[calc(50%-14px)] left-[calc(50%-14px)] flex justify-center items-center bg-[rgba(23,38,44,1)] rounded-[7px] x-7 h-7 p-[7px]'>
                         <Image src={Arrow_Icon} alt="arrow_logo" className='w-[14px] h-[14px]'></Image>
                       </div>
 
@@ -1537,7 +1537,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="customShare bg-[rgba(6,11,39,1)] w-full h-screen flex flex-col pt-5 pb-10">
+                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col pt-5 pb-10">
                   <div className='w-full flex gap-2 items-center justify-between px-5'>
                     <button className='customShare flex justify-center items-center w-11 h-11 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] rounded-full border-[1.2px] border-[rgba(255,255,255,0.1)]'
                       onClick={() => {
@@ -1678,7 +1678,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                     </div>
 
                     <div className='w-full flex flex-col gap-[10px]'>
-                      <button className={`font-[Inter] font-semibold py-3 rounded-full bg-[rgba(28,118,255,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
+                      <button className={`font_Inter font-bold py-3 rounded-full bg-[rgba(70,147,163,1)] w-full text-sm text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}
                         onClick={() => {
                           setIsBuyMobile(true);
                         }}

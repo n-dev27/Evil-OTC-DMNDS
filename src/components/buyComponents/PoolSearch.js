@@ -275,7 +275,7 @@ const PoolSearch = (props) => {
               </div>
             </div>
           </div>
-          <div className='h-[calc(100vh-310px)] sm:h-full'>
+          <div className='h-[calc(100vh-320px)] sm:h-full overflow-y-auto'>
             <div className="flex flex-col justify-center">
               <div className='flex'>
                 {token && (
@@ -664,6 +664,7 @@ const PoolSearch = (props) => {
                   setIsBuyFlag={props.setIsBuyFlag}
                   setIsChartFlag={props.setIsChartFlag}
                   setIsFavorite={props.setIsFavorite}
+                  setIsFavMobile={props.setIsFavMobile}
                   chain={chain}
                   token={token}
                   poolOption={poolOption}

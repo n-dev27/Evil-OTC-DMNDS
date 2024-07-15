@@ -280,7 +280,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                             borderRadius: '1rem',
                             background: getTrackBackground({
                               values,
-                              colors: ['rgba(255,255,255,0.1)', 'rgba(28,118,255,1)', 'rgba(255,255,255,0.1)'],
+                              colors: ['rgba(255,255,255,0.1)', 'rgba(70,147,163,1)', 'rgba(255,255,255,0.1)'],
                               min: 0,
                               max: 25,
                             }),
@@ -388,7 +388,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                             borderRadius: '1rem',
                             background: getTrackBackground({
                               values,
-                              colors: ['rgba(255,255,255,0.1)', 'rgba(28,118,255,1)', 'rgba(255,255,255,0.1)'],
+                              colors: ['rgba(255,255,255,0.1)', 'rgba(70,147,163,1)', 'rgba(255,255,255,0.1)'],
                               min: 0,
                               max: 25,
                             }),
@@ -657,7 +657,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               <Image className='w-4 h-4' src={favPoolList[index] === true ? star_1 : star_2} alt='star_logo' ></Image>
                             </div>
                             <div className='absolute w-full flex justify-end'>
-                              <div className='flex justify-center items-center bg-[rgba(28,118,255,0.8)] text-white text-[9px] font_[Inter] font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-xl rounded-bl-xl'>
+                              <div className='flex justify-center items-center bg-[rgba(255,0,0,1)] text-white text-[9px] font_Inter font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-xl rounded-bl-xl'>
                                 {pool.listingType ? 'FIXED PRICE LISTING' : 'MARKET PRICE LISTING'}
                               </div>
                             </div>
@@ -722,7 +722,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                   </div>
                                   {pool.poolData_4?.toString() > '0' ? (
                                     <div className='flex flex-col gap-1'>
-                                      <div className='text-[rgba(28,118,255,1)] text-[14px] font-semibold'>
+                                      <div className='text-[rgba(255,0,0,1)] text-[14px] font-semibold'>
                                         {countLeadingZerosAfterDecimal((pool.poolData_4?.toString() *
                                           utils.formatUnits(pool.poolData_5?.toString(), pool?.tokenDecimals)) /
                                           10 ** 18)}{' '}
@@ -754,7 +754,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                     </div>
                                   ) : (
                                       <div className='flex flex-col gap-1'>
-                                        <div className='text-[rgba(28,118,255,1)] text-[14px] font-[Inter] font-semibold'>
+                                        <div className='text-[rgba(255,0,0,1)] text-[14px] font-[Inter] font-semibold'>
                                           {marketPrices[index]?.priceNative ? buyPriceEth + ' ' + chainSymbol : '- ' + chainSymbol}&nbsp;
                                         </div>
                                         <div className='flex gap-2'>
@@ -881,7 +881,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               values[1]
                               ? ''
                               : 'hidden'
-                          } relative min-h-[107px] text-center gap-2 mt-5 flex flex-col rounded-xl border border-[rgba(255,255,255,0.1)] border-solid bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] hover:border-[rgba(28,118,255,1)] hover:shadow-[0_0_0_2px_rgba(255,255,255,0.1)]`}
+                          } relative min-h-[107px] text-center gap-2 mt-5 flex flex-col rounded-xl border border-[rgba(255,255,255,0.1)] border-solid bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] hover:border-[rgba(255,0,0,1)] hover:shadow-[0_0_0_2px_rgba(255,255,255,0.1)]`}
                           >
                             <div className={`${favPoolList[index] === true ? 'bg-[rgba(255,216,13,0.1)]' : 'bg-[rgba(255,255,255,0.05)]'} z-20 absolute top-[-16px] left-[-16px] cursor-pointer rounded-full w-9 h-9 flex justify-center items-center shadow-[rgba(0,0,0,0.16)] border border-[rgba(255,255,255,0.1)]`}
                               onClick={() => handleFavorite(index, pool)}
@@ -889,7 +889,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               <Image className='w-4 h-4' src={favPoolList[index] === true ? star_1 : star_2} alt='star_logo' ></Image>
                             </div>
                             <div className='absolute w-full flex justify-end'>
-                              <div className='flex justify-center items-center bg-[rgba(28,118,255,0.8)] text-white text-[9px] font_[Inter] font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-xl rounded-bl-2xl'>
+                              <div className='flex justify-center items-center bg-[rgba(255,0,0,1)] text-white text-[9px] font_Inter font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-xl rounded-bl-2xl'>
                                 {pool.listingType ? 'FIXED PRICE LISTING' : 'MARKET PRICE LISTING'}
                               </div>
                             </div>
@@ -956,7 +956,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                   </div>
                                   {pool.poolData_4?.toString() > '0' ? (
                                     <div className='flex flex-col gap-1'>
-                                      <div className='text-[rgba(28,118,255,1)] text-[14px] font-semibold'>
+                                      <div className='text-[rgba(255,0,0,1)] text-[14px] font-semibold'>
                                         {countLeadingZerosAfterDecimal((pool.poolData_4?.toString() *
                                           utils.formatUnits(pool.poolData_5?.toString(), pool?.tokenDecimals)) /
                                           10 ** 18)}{' '}
@@ -988,7 +988,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                     </div>
                                   ) : (
                                       <div className='flex flex-col gap-1'>
-                                        <div className='text-[rgba(28,118,255,1)] text-[14px] font-[Inter] font-semibold'>
+                                        <div className='text-[rgba(255,0,0,1)] text-[14px] font-[Inter] font-semibold'>
                                           {marketPrices[index]?.priceNative ? buyPriceEth + ' ' + chainSymbol : '- ' + chainSymbol}&nbsp;
                                         </div>
                                         <div className='flex gap-2'>
@@ -1145,7 +1145,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               <Image className='w-3 h-3' src={favPoolList[index] === true ? star_1 : star_2} alt='star_logo' ></Image>
                             </div>
                             <div className='absolute w-full flex justify-end'>
-                              <div className='flex justify-center items-center bg-[rgba(28,118,255,0.8)] text-white text-[9px] font_[Inter] font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-xl'>
+                              <div className='flex justify-center items-center bg-[rgba(255,0,0,1)] text-white text-[9px] font_Inter font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-xl'>
                                 {pool.listingType ? 'FIXED PRICE LISTING' : 'MARKET PRICE LISTING'}
                               </div>
                             </div>
@@ -1298,7 +1298,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                   const resizeEvent = new Event('resize');
                                   window.dispatchEvent(resizeEvent);      
                                 }} 
-                                className={`customShare text-sm font-semibold font-[Inter] py-2 rounded-full bg-[rgba(28,118,255,1)] w-full text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}>
+                                className={`customShare text-sm font-bold font_Inter py-2 rounded-full bg-[rgba(70,147,163,1)] w-full text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}>
                                 Buy Now
                               </button>
                             </div>
@@ -1328,7 +1328,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                               <Image className='w-3 h-3' src={favPoolList[index] === true ? star_1 : star_2} alt='star_logo' ></Image>
                             </div>
                             <div className='absolute w-full flex justify-end'>
-                              <div className='flex justify-center items-center bg-[rgba(28,118,255,0.8)] text-white text-[9px] font_[Inter] font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-xl'>
+                              <div className='flex justify-center items-center bg-[rgba(255,0,0,1)] text-white text-[9px] font_Inter font-bold py-[2px] pl-2 w-[140px] h-4 rounded-tr-lg rounded-bl-xl'>
                                 {pool.listingType ? 'FIXED PRICE LISTING' : 'MARKET PRICE LISTING'}
                               </div>
                             </div>
@@ -1481,7 +1481,7 @@ const AllPublicPools = ({ setIsBuyFlag, setIsChartFlag, setIsFavorite, filterFla
                                   const resizeEvent = new Event('resize');
                                   window.dispatchEvent(resizeEvent);
                                 }} 
-                                className={`customShare text-sm font-semibold font-[Inter] py-2 rounded-full bg-[rgba(28,118,255,1)] w-full text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}>
+                                className={`customShare text-sm font-bold font_Inter py-2 rounded-full bg-[rgba(70,147,163,1)] w-full text-[rgba(255,255,255,0.8)] flex items-center justify-center border-[1.2px] border-[rgba(255,255,255,0.1)]`}>
                                 Buy Now
                               </button>
                             </div>
