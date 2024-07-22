@@ -238,7 +238,7 @@ function TxPendingSellContainer () {
                                   ).toString() > 0 ?
                                 <div className='flex gap-1'>
                                   <div><Image src={hide} alt='hide' className='cursor-pointer hover:scale-110'/></div>
-                                  <div><CancelPools tokenAddress={pool?.tokenAddress} ownedPool={pool?.poolAddress} isChanged={isChanged} setIsChanged={setIsChanged}/></div>
+                                  <div className='flex'><CancelPools tokenAddress={pool?.tokenAddress} ownedPool={pool?.poolAddress} isChanged={isChanged} setIsChanged={setIsChanged}/></div>
                                   <div><UpdatePoolModal ownedPool={pool?.poolAddress} tokenAddress={pool?.tokenAddress}/></div>
                                 </div>
                                 :
