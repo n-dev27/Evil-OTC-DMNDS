@@ -287,7 +287,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
   return (
     <div className='flex'>
       {isFavorite &&
-        <div className={`customShare customFavorite min-w-[458px] w-1/3 h-full flex flex-col gap-4 rounded-2xl p-6`}>
+        <div className={`customShare customFavorite min-w-[458px] w-1/3 h-full flex flex-col gap-4 rounded-2xl p-6 overflow-y-auto`}>
           <div className='w-full flex gap-2 items-center'>
             <Image src={back} alt='back_logo' className='cursor-pointer'
               onClick={() => setIsFavorite(false)}
@@ -457,7 +457,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
       
       {isChartFlag &&
       (
-        <div className={`customShare customFavorite relative min-w-[458px] w-1/3 h-full flex flex-col gap-4 rounded-2xl p-6`}>
+        <div className={`customShare customFavorite relative min-w-[458px] w-1/3 h-full flex flex-col gap-4 rounded-2xl p-6 overflow-y-auto`}>
           <div className='w-full flex gap-2 items-center'>
             <Image src={back} alt='back_logo' className='cursor-pointer'
               onClick={() => {
@@ -568,7 +568,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
 
       {isBuyFlag &&
       ( 
-        <div className={`customShare customFavorite relative min-w-[458px] w-1/3 h-full flex flex-col justify-center gap-4 rounded-2xl px-6 pt-8 pb-6`}>
+        <div className={`customShare customFavorite relative min-w-[458px] w-1/3 h-full flex flex-col justify-center gap-4 rounded-2xl px-6 pt-8 pb-6 overflow-y-auto`}>
           <button
             type="button"
             className="absolute top-7 right-5 h-6 w-6 flex items-center justify-center rounded-md border border-transparent bg-transparent hover:bg-[rgba(255,255,255,0.2)] text-center"
@@ -809,7 +809,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
       )}
 
       {!isFavorite && !isChartFlag && !isBuyFlag && (
-        <div className={`customShare w-full xl:min-w-[458px] xl:w-1/3 h-full xs:flex-col xl:bg-[rgba(22,41,48,0.8)] rounded-2xl xl:px-4 pt-6 xl:pt-10`}>
+        <div className={`customShare w-full xl:min-w-[458px] xl:w-1/3 h-full xs:flex-col xl:bg-[rgba(22,41,48,0.8)] rounded-2xl xl:px-4 pt-6 xl:pt-10 overflow-y-auto`}>
         {showShareModal && (
           <ShareModal isOpen={showShareModal} setIsOpen={setShowShareModal} poolInfo={poolInfo} />
         )}
@@ -1280,7 +1280,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col justify-between p-5 py-10">
+                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col justify-between p-5 py-10 overflow-y-auto">
                   <button
                     type="button"
                     className="absolute top-7 right-5 h-6 w-6 flex items-center justify-center rounded-md border border-transparent bg-transparent hover:bg-[rgba(255,255,255,0.2)] text-center"
@@ -1537,7 +1537,7 @@ export default function Favorites({ isNarrowScreen, tokenImage, marketPricesFrom
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col pt-5 pb-10">
+                <Dialog.Panel className="customShare bg-[rgba(22,41,48,1)] w-full h-screen flex flex-col pt-5 pb-10 overflow-y-auto">
                   <div className='w-full flex gap-2 items-center justify-between px-5'>
                     <button className='customShare flex justify-center items-center w-11 h-11 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.01)] rounded-full border-[1.2px] border-[rgba(255,255,255,0.1)]'
                       onClick={() => {
