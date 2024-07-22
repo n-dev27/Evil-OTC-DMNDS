@@ -197,7 +197,7 @@ function ClaimModal({ item, viewIndex, setViewIndex, buttonFlag, setButtonFlag, 
       <>
         <td className='p-3'></td>
         <td className='p-3'>
-          <div className='text-[rgba(100,116,139,1)] text-smfont-[Inter]'>
+          <div className='text-[rgba(100,116,139,1)] text-sm font_Inter'>
             {item.amount / 10 ** 18}
           </div>
         </td>
