@@ -161,7 +161,7 @@ export default function BuyLayout({ poolRouter }) {
   const router = useRouter();
   
   const { loading, error, data, refetch } = useQuery(GET_POOL_INFO);
-  const { isFavmobile, setIsFavMobile, chainKey, setChainKey, chainFlag, setChainFlag, hotButtonFlag, isBuyMobile, setIsBuyMobile, routerPath, setSelectedOne, setToken, showButton, setShowButton } = useContext(LayoutContext);
+  const { chainKey, setChainKey, chainFlag, setChainFlag, hotButtonFlag, isBuyMobile, setIsBuyMobile, isFavMobile, setIsFavMobile, isChartMobile, setIsChartMobile, routerPath, setSelectedOne, setToken, showButton, setShowButton } = useContext(LayoutContext);
   const [key, setKey] = useState(Math.random()); // initialize with random key 
   const [isNarrowScreen, setIsNarrowScreen] = useState(false); // Default to false
   const [discountListing, setDiscountListing] = useState([]);
@@ -377,9 +377,15 @@ export default function BuyLayout({ poolRouter }) {
 
     if (screenWidth >= 1210) {
       document.querySelector(".buyTokens")?.click();
+      setIsBuyMobile(false);
+      setIsChartMobile(false);
+      setIsFavMobile(false);
     } else {
         // Other conditions for different widths can be implemented here
       document.querySelector(".buyTokens")?.click();
+      setIsFavorite(false);
+      setIsBuyFlag(false);
+      setIsChartFlag(false);
     }
   };
 
